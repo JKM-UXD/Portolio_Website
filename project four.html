@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JKM Portfolio - Project Four</title>
+        <link rel="stylesheet" href="project%20four.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="yeet" class="menuOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeM()">&times;</a>
+            <div class="menuLinks">
+                <a href="index.html">HOME</a>
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <script>
+            function openM () {
+                    document.getElementById("yeet").style.height = "100%";
+                }
+                                        
+            function closeM () {
+                    document.getElementById("yeet").style.height = "0%";
+                }
+        </script>
+        <div class="titleContent">
+            <div class="projectOne">
+                <h1 class="headerA">AIRPORT - WAITING TIME</h1>
+            </div>
+            <div class="nav">
+                <div class="bar">
+                    <div class="menu">
+                        <div class="links">
+                            <h2 class="l"><span onclick="openM()">MENU</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="overview">
+                    <div class="ovCont">
+                        <div class="ovHeader">
+                            <h1 class="ovH">OVERVIEW</h1>
+                        </div>
+                        <div class="ovContent">
+                            <div class="identity">
+                                <h4 class="typeH">FIELD</h4>
+                                <h5 class="type">Design</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TYPE</h4>
+                                <h5 class="type">School Project</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TEAM</h4>
+                                <h5 class="type">Solo / Quartet</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">DURATION</h4>
+                                <h5 class="type">8 weeks</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="introContainer">
+                        <p class="introtext">A project about Creativity, Ideation and Visualisation. Waiting at an airport can be exhausting and frustrating. So, how can we spice up waiting time during your wait?</p>
+                    </div>
+                </div>
+                <div class="pictures">
+                    <div class="picContainer">
+                        <div class="slide">
+                            <img style="background-image: url(cover.png)">
+                            <div class="imgDescr">Portfolio Cover</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(first%20idea.png)">
+                            <div class="imgDescr">Sketch of a first idea</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(worddance.png)">
+                            <div class="imgDescr">Word dance</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(brainstorm%20copy.png)">
+                            <div class="imgDescr">Brainstorming</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(highlighting.png)">
+                            <div class="imgDescr">Cluster</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(activity.png)">
+                            <div class="imgDescr">Idea</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(international.png)">
+                            <div class="imgDescr">Idea</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(camping.png)">
+                            <div class="imgDescr">Idea</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(matrix.png)">
+                            <div class="imgDescr">Matrix</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(exaggerated.png)">
+                            <div class="imgDescr">Exaggerated Idea</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(storyboard.png)">
+                            <div class="imgDescr">Storyboard</div>
+                        </div>
+                        <a class="pre" onclick="nSlide(-1)">&#8592;</a>
+                        <a class="ne" onclick="nSlide(1)">&#8594;</a>
+                    </div>
+                </div>
+                <script>
+                    var index = 1;
+                    show(index);
+                    
+                    function nSlide(n) {
+                        show(index += n);
+                    }
+                    
+                    function show(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        
+                        if (n > slides.length) {
+                            index = 1
+                        }
+                        if (n < 1) {
+                            index = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[index-1].style.display = "block";
+                    }
+                </script>
+                <div class="details">
+                    <div class="timelineContainer">
+                        <div class="timeline"></div>
+                        <div class="teContainer">
+                            <h5 class="indiTop">Cover</h5>
+                            <h5 class="indi">CV</h5>
+                            <h5 class="indi">First Ideas</h5>
+                            <h5 class="indi">HMW</h5>
+                            <h5 class="indi">Brainstorm</h5>
+                            <h5 class="indi">Ideation</h5>
+                            <h5 class="indi">Converging</h5>
+                            <h5 class="indi">Iterating</h5>
+                            <h5 class="indi">Storyboard</h5>
+                        </div>
+                    </div>
+                    <div class="explanationContainer">
+                        <p class="eP">We started this project off by expressing ourselves and designing a personalised cover for the portfolio as making a logo for the course next year. Moreover, we created a sketched CV for ourselves as an introduction to visualising ideas. The initial problem to solve was “How might we spice up waiting time at an airport?”. Therefore, I sketched my first idea of a multifunctional app on an A3. Following the initial brainstorming, we got together in groups of four to come up with our own HMW question by applying a word dance on the original question. After converging to a final HMW question we tried brainstorm as many ideas as possible in order to solve the problem. We then converged again and defined the best ideas and categorized them in different clusters. In order to answer the final HMW question I took inspiration from the ideas we came up with and created my own 5 solutions. I then used an evaluation matrix to evaluate the most fitting idea of the bunch. I used a technique from Roger von Oech’s Whack Pack cards (exaggerating) in order to improve the idea even more. Lastly I created a storyboard resembling the User Experience of visiting the ‘International Street Food Market’.</p>
+                    </div>
+                </div>
+                <div class="nextUp">
+                    <div class="skipContainer">
+                        <div class="goBack">
+                            <div class="nC">
+                                <h3 class="previousPro">PREVIOUS PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="pproj"><a href="project%20three.html">Rijksstudio</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

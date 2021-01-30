@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JKM Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="yeet" class="menuOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeM()">&times;</a>
+            <div class="menuLinks">
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="#content" onclick="closeM()">PORTFOLIO</a>
+                <a href="#contact" onclick="closeM()">CONTACT</a>
+            </div>
+        </div>
+        <script>
+            function openM () {
+                    document.getElementById("yeet").style.height = "100%";
+                }
+                                        
+            function closeM () {
+                    document.getElementById("yeet").style.height = "0%";
+                }
+        </script>
+        <div class="containerMain">
+            <div class="title">
+                <h3 class="header1">UX Design</h3>      
+                <h2 class="header2">PORTFOLIO</h2>
+                <h2 class="header3">JKM</h2>
+            </div>
+            <div class="sign">
+                <h1 class="signature">jkm</h1>
+            </div>
+            <div class="contact">
+                <div class="rectangle1"></div>
+                <p class="contactL"><a href="#footer">CONTACT</a></p>
+                <div class="rectangle2"></div>
+            </div>
+            <div class="menu">
+                <div class="rectangle3"></div>
+                <p class="menuL"><span onclick="openM()">MENU</span></p>
+                <div class="rectangle4"></div>
+            </div>
+        </div>
+        <button id="button" onclick="toTop()" title="top"><div id="arrow">&#10132;</div></button>
+        <script>
+            mybutton = document.getElementById("button");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function toTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <div id="content" class="contentContainer">
+            <div class="box">
+                <h3 class="portf">PORTFOLIO</h3>
+                <div class="contentSection">
+                    <img src="wing%20chun%20cover.png" class="wingchunCover">
+                    <div class="contentText1">
+                        <h1 class="projectTitle"><a href="project%20one.html">WING CHUN</a></h1>
+                        <p class="projectDescr">A detailed research report on the Wing Chun subculture</p>
+                        <div class="indexRow">
+                            <div class="index">
+                                <p class="indexDescr">User Research</p>
+                            </div>
+                            <div class="index">
+                                <p class="indexDescr">Empathising</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentText2">
+                        <h1 class="projectTitle"><a href="project%20two.html">GIFT GIVING EXPERIENCE</a></h1>
+                        <p class="projectDescr">A complete design thinking process on a bespoke gift giving experience</p>
+                        <div class="indexRow2">
+                            <div class="index2">
+                                <p class="indexDescr">UX</p>
+                            </div>
+                            <div class="index2">
+                                <p class="indexDescr">Design Thinking</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="bsp%20cover.jpg" class="cover1">
+                    <img src="rijksstudio%20cover.jpg" class="cover2">
+                    <div class="contentText">
+                        <h1 class="projectTitle"><a href="project%20three.html">RIJKSMUSEUM</a></h1>
+                        <p class="projectDescr">A user trailing focused on the Rijksstudio website </p>
+                        <div class="indexRow">
+                            <div class="index">
+                                <p class="indexDescr">User Testing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentText2">
+                        <h1 class="projectTitle"><a href="project%20four.html">AIRPORT - WAITING TIME</a></h1>
+                        <p class="projectDescr">A project about Creativity, Ideation and Visualisation</p>
+                        <div class="indexRow2">
+                            <div class="index2">
+                                <p class="indexDescr">Ideation</p>
+                            </div>
+                            <div class="index2">
+                                <p class="indexDescr">Visualisation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="storyboard.png" class="cover1">
+                </div>
+                <div id="abmAnchor" class="aboutme">
+                    <div class="abox">
+                        <img src="pp.png" class="p">
+                        <h1 class="aboutMeTitle">ABOUT ME</h1>
+                        <p class="aT">Hi! My name is Julian, I’m am 19 years old from Germany. I am currently a first year User Experience Design student at The Hague University of Applied Sciences!
+                        <br>
+                        Even before I graduated from high school, I knew I wanted to become a UX Designer.  
+                        After a gap year in which I was working and studying Computer Science and Sociology I moved to the Netherlands in order to pursue my dream job as a User Experience Designer.</p>
+                        <br>
+                        <p class="aT">You can learn more about me <a href="aboutme.html">here!</a></p>
+                    </div>
+                </div>
+                <div id="contact" class="social">
+                    <div class="socialBox">
+                        <div class="socialIcons">
+                            <div class="twitter"></div>
+                            <div class="insta"></div>
+                            <div class="behance"></div>
+                            <div class="dribbble"></div>
+                        </div>
+                        <h1 class="socialH">Let's get to work!</h1>
+                        <p class="email"><a href="mailto:julianmueller.uxd@gmail.com" target="_blank">julianmueller.uxd@gmail.com</a></p>
+                    </div>
+                </div>
+                <footer>
+                    <div id="footer" class="footerContainer">
+                        <div class="footer">
+                            <p class="footerT">made by Julian Kendrick Müller © 2021</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

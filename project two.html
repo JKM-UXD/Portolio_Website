@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JKM Portfolio - Project Two</title>
+        <link rel="stylesheet" href="project%20two.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="yeet" class="menuOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeM()">&times;</a>
+            <div class="menuLinks">
+                <a href="index.html">HOME</a>
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <script>
+            function openM () {
+                    document.getElementById("yeet").style.height = "100%";
+                }
+                                        
+            function closeM () {
+                    document.getElementById("yeet").style.height = "0%";
+                }
+        </script>
+        <div class="titleContent">
+            <div class="projectOne">
+                <h1 class="headerA">GIFT GIVING EXPERIENCE</h1>
+            </div>
+            <div class="nav">
+                <div class="bar">
+                    <div class="menu">
+                        <div class="links">
+                            <h2 class="l"><span onclick="openM()">MENU</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="overview">
+                    <div class="ovCont">
+                        <div class="ovHeader">
+                            <h1 class="ovH">OVERVIEW</h1>
+                        </div>
+                        <div class="ovContent">
+                            <div class="identity">
+                                <h4 class="typeH">FIELD</h4>
+                                <h5 class="type">UX</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TYPE</h4>
+                                <h5 class="type">School Project</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TEAM</h4>
+                                <h5 class="type">Duo</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">DURATION</h4>
+                                <h5 class="type">2 months</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="introContainer">
+                        <p class="introtext">A complete design thinking process on a bespoke gift giving experience. International students are often separated from their family and friends over a long distance. Therefore, the special occasion of receiving an impactful gift from friends or family would strengthen the connection between each other. How could you design a personalised and impactful gift giving experience, enhancing and accompanying the gift? 
+                        </p>
+                    </div>
+                </div>
+                <div class="pictures">
+                    <div class="picContainer">
+                        <div class="slide">
+                            <img style="background-image: url(gift%20giving%20experience.png)">
+                            <div class="imgDescr">Mind map with first assumptions</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(transcriptBSP.png)">
+                            <div class="imgDescr">Rudimentary Transcript - Ethnographic Interview </div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(diagramBSP.png)">
+                            <div class="imgDescr">Data Overview</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(insightsBSP.png)">
+                            <div class="imgDescr">Insights</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(portraitBSP.png)">
+                            <div class="imgDescr">User Portrait</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(personaBSP.png)">
+                            <div class="imgDescr">Persona</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(concept.png)">
+                            <div class="imgDescr">Concept</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(draft%20prototype.png)">
+                            <div class="imgDescr">First draft</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(final%20prototype.png)">
+                            <div class="imgDescr">Final prototype</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(exerpt%20prototype.png)">
+                            <div class="imgDescr">Exerpt 1</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(expert%20prototype%202.png)">
+                            <div class="imgDescr">Exerpt 2</div>
+                        </div>
+                        <a class="pre" onclick="nSlide(-1)">&#8592;</a>
+                        <a class="ne" onclick="nSlide(1)">&#8594;</a>
+                    </div>
+                </div>
+                <script>
+                    var index = 1;
+                    show(index);
+                    
+                    function nSlide(n) {
+                        show(index += n);
+                    }
+                    
+                    function show(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        
+                        if (n > slides.length) {
+                            index = 1
+                        }
+                        if (n < 1) {
+                            index = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[index-1].style.display = "block";
+                    }
+                </script>
+                <div class="details">
+                    <div class="timelineContainer">
+                        <div class="timeline"></div>
+                        <div class="teContainer">
+                            <h5 class="indiTop">User Research</h5>
+                            <h5 class="indi">Defining Insights</h5>
+                            <h5 class="indi">Sinterklaas</h5>
+                            <h5 class="indi">Design Vision</h5>
+                            <h5 class="indi">Persona</h5>
+                            <h5 class="indi">Final Design Vision</h5>
+                            <h5 class="indi">Ideation</h5>
+                            <h5 class="indi">Prototyping</h5>
+                            <h5 class="indi">Testing</h5>
+                            <h5 class="indi">Presentation</h5>
+                        </div>
+                    </div>
+                    <div class="explanationContainer">
+                        <p class="eP">The project was entirely about designing the experience which consisted of a physical token and the digital unwrapping experience of an intangible gift. The project was divided in two parts. The first half focused on empathising and defining. The second half covered the ideation, prototype and testing phase. We began by individually conducting ethnographic research on predetermined users. I used several research techniques to gain insights in the interests needs, values and goals of my user. Moreover, I conducted interviews to gain insights in the usual / past gift giving experiences. In the next step organised my data into clusters to identify connections. I analysed my findings and pinpointed the most relevant insights. This stage was set around the dutch Sinterklaas. We used this to make surprises for our users based on the insights we gathered. Therefore, we could translate our insights into the gift and unwrapping experience and put our knowledge and findings to the test. Similar to the ultimate assignment the actual wrapping of the gift was more important than the gift in itself. After the intermission/test of the ‘sint’ I went on creating a user portrait. Lastly, I defined a design vision for the gift giving experience for my user. This concluded the first part of the process. 
+                        Together with my design team partner we combined both our data into a fitting persona that would be the foundation for our final gift giving experience. We formulated a design vision that would guide us through the ideation and prototyping phase. From the design vision we formulated HMW questions. I used several creative techniques in order to diverge and create a lot of ideas in order to answer the problems and needs the HMW posed. After sketching a range of ideas, I combined multiple ideas into several gift giving experience concepts. I converge these concepts into three draft concepts which I compared with my design team partner. We combined both our ideas into three final draft concepts. Additionally, we worked out and implemented dramatic arcs for each. Following that we evaluated our concepts and picked one of them to be our final concept to improve on and execute. Before we began digitally prototyping, we individually created paper prototypes to test and evaluate the interaction quality of our concepts. By again first combining the ideas of our paper prototypes we went on individually creating the first drafts of our digital draft prototypes in AdobeXD. Based on both our prototypes we combined them into a whole new iteration of the digital unwrapping. To improve our final prototype, we conducted user tests to help us identify flaws as well as strengths. We merged out flaws accordingly and prepared for the final stage. We concluded the project with a presentation of our work at a digital expo. </p>
+                    </div>
+                </div>
+                <div class="nextUp">
+                    <div class="skipContainer">
+                        <div class="goBack">
+                            <div class="nC">
+                                <h3 class="previousPro">PREVIOUS PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="pproj"><a href="project%20one.html">Wing Chun</a></h4>
+                            </div>
+                        </div>
+                        <div class="next">
+                            <div class="nC">
+                                <h3 class="nextPro">NEXT PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="nproj"><a href="project%20three.html">Rijksstudio</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

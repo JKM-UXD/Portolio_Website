@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JKM Portfolio - Project Three</title>
+        <link rel="stylesheet" href="project%20three.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="yeet" class="menuOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeM()">&times;</a>
+            <div class="menuLinks">
+                <a href="index.html">HOME</a>
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <script>
+            function openM () {
+                    document.getElementById("yeet").style.height = "100%";
+                }
+                                        
+            function closeM () {
+                    document.getElementById("yeet").style.height = "0%";
+                }
+        </script>
+        <div class="titleContent">
+            <div class="projectOne">
+                <h1 class="headerA">RIJKSSTUDIO</h1>
+            </div>
+            <div class="nav">
+                <div class="bar">
+                    <div class="menu">
+                        <div class="links">
+                            <h2 class="l"><span onclick="openM()">MENU</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="overview">
+                    <div class="ovCont">
+                        <div class="ovHeader">
+                            <h1 class="ovH">OVERVIEW</h1>
+                        </div>
+                        <div class="ovContent">
+                            <div class="identity">
+                                <h4 class="typeH">FIELD</h4>
+                                <h5 class="type">User Testing</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TYPE</h4>
+                                <h5 class="type">School Project</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TEAM</h4>
+                                <h5 class="type">Quintet</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">DURATION</h4>
+                                <h5 class="type">6 weeks</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="introContainer">
+                        <p class="introtext">A user trailing focused on the Rijksstudio website. Together in a group of 5 we conducted usability testing on the of the digital collection of the dutch Rijksmuseum. </p>
+                    </div>
+                </div>
+                <div class="pictures">
+                    <div class="picContainer">
+                        <div class="slide">
+                            <img style="background-image: url(sitemap.png)">
+                            <div class="imgDescr">Detailed Sitemap of the Rijksstudio</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(interaction.png)">
+                            <div class="imgDescr">Interaction possibilities </div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(researchquestions.png)">
+                            <div class="imgDescr">Research questions</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(tasks.png)">
+                            <div class="imgDescr">Tasks</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(protocol.png)">
+                            <div class="imgDescr">Expert of the Protocol</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(transcriptUT.png)">
+                            <div class="imgDescr">Protocol of the Video Recording</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(overviewAnalysis.png)">
+                            <div class="imgDescr">Overview and analysis of the data</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(recommendations.png)">
+                            <div class="imgDescr">Recommendations</div>
+                        </div>
+                        <a class="pre" onclick="nSlide(-1)">&#8592;</a>
+                        <a class="ne" onclick="nSlide(1)">&#8594;</a>
+                    </div>
+                </div>
+                <script>
+                    var index = 1;
+                    show(index);
+                    
+                    function nSlide(n) {
+                        show(index += n);
+                    }
+                    
+                    function show(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        
+                        if (n > slides.length) {
+                            index = 1
+                        }
+                        if (n < 1) {
+                            index = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[index-1].style.display = "block";
+                    }
+                </script>
+                <div class="details">
+                    <div class="timelineContainer">
+                        <div class="timeline"></div>
+                        <div class="teContainer">
+                            <h5 class="indiTop">Research</h5>
+                            <h5 class="indi">Sitemap</h5>
+                            <h5 class="indi">Assumptions</h5>
+                            <h5 class="indi">Research Questions</h5>
+                            <h5 class="indi">Research Set-up</h5>
+                            <h5 class="indi">Testing Protocol</h5>
+                            <h5 class="indi">Data collection and processing</h5>
+                            <h5 class="indi">Analysis</h5>
+                            <h5 class="indi">Answering research questions</h5>
+                            <h5 class="indi">Recommendations</h5>
+                        </div>
+                    </div>
+                    <div class="explanationContainer">
+                        <p class="eP">First of all, we made ourselves familiar with the Rijksstudio (website). We created a complete sitemap in order to get an overview of pages, interactions and limitations. Then we formulated research questions to guide us through the process. Following that we created a research set-up which specifically defined the framework and procedure of the testing including the testing protocol. Each of us recruited a participant to use for testing purposes and each of us conducted a usability test with that respective person. For our tests we had both a test lead and an observer. For both parts we made a clear protocol that would ensure the compatibility of our data. The test itself consisted of a handful of tasks which would visualise possible usability issues with the website. Following the test, we planned interviews in order to get more insights and opinions from the participants.
+                        In order to combine our data, we created special diagrams, lists and tables fitting the purpose of each research question. This made analysing the data a lot more efficient. We took the combined and interpreted findings to answer our research questions posed in the beginning. Lastly, we wrote recommendations for changes that would be vital for the betterment of the usability of the website.</p>
+                    </div>
+                </div>
+                <div class="nextUp">
+                    <div class="skipContainer">
+                        <div class="goBack">
+                            <div class="nC">
+                                <h3 class="previousPro">PREVIOUS PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="pproj"><a href="project%20two.html">Gift giving experience</a></h4>
+                            </div>
+                        </div>
+                        <div class="next">
+                            <div class="nC">
+                                <h3 class="nextPro">NEXT PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="nproj"><a href="project%20four.html">Airport - Waiting Time</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

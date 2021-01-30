@@ -1,0 +1,509 @@
+body {
+    background-color: #313131;
+}
+
+@font-face {
+    font-family: GRIFTER, sans-serif;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border: none;
+}
+
+/*Title*/
+
+.titleContent {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+
+.projectOne {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+/*    background-color: antiquewhite;*/
+}
+
+.headerA {
+    font-size: 7vh;
+    margin-left: 25%;
+    font-family: GRIFTER, sans-serif;
+    color: azure;
+}
+
+@font-face {
+    font-family: GRIFTER;
+    src: url(GRIFTER.woff);
+}
+
+
+.nav {
+    width: 25%;
+    height: 100%;
+/*    background-color: dodgerblue;*/
+}
+
+.bar {
+    width: 50px;
+    height: 100%;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    height: 35%;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    width: 100%;
+    height: 6em;
+/*    background-color: orangered;*/
+}
+
+.l {
+    padding: 0%;
+    color: white;
+    transform: rotate(90deg);
+    font-family: Avenir, sans-serif;
+    cursor: pointer;
+}
+
+h2.l:hover {
+    color: coral;
+}
+
+
+/*Overlay Menu*/
+
+.menuOverlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    left: 0%;
+    right: 0%;
+    background-color: #1D1D1D;
+    opacity: 90%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.menuLinks {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.menuLinks a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 40px;
+    color:  white;
+    display: block;
+    font-family: GRIFTER, sans-serif;
+}
+
+.menuLinks a:hover {
+    color: coral;
+}
+
+.menuOverlay .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    color: azure;
+}
+
+.menuOverlay .closebtn:hover {
+    color: coral;
+}
+
+
+
+
+/*Content*/
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin-top: -7%;
+    width: 78.5%;
+    height: 91rem;
+    border: 1px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 1px 15px 70px #000000;
+    background-color: #313131;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5em 15em 3em 7em 3em 20em 3em 25em 5em 5em;
+}
+
+
+/*Overview*/
+
+.overview {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: auto;
+    height: auto;
+/*    background-color: beige;*/
+    display: flex;
+    justify-content: center;
+}
+
+.ovContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+/*    background-color: aliceblue;*/
+}
+
+.ovCont {
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 5px 55px #191919;
+    background-color: #313131;
+/*    background-color: aquamarine;*/
+}
+
+.ovHeader {
+    width 100%;
+    height: 25%;
+/*    color: firebrick; */
+/*    background-color: yellowgreen;*/
+}
+
+.ovH {
+    font-family: Avenir, sans-serif;
+    margin-top:  0%;
+    padding-top: 2%;
+    padding-left: 4%;
+    margin-bottom: 0%;
+    font-size: 2em;
+    color: aliceblue;
+/*    background-color: aqua;*/
+}
+
+.ovContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    color: aliceblue;
+    font-size: 1.2em;
+/*    background-color: blueviolet;*/
+}
+
+.identity {
+    width: 20%;
+    height: 100%;
+/*    background-color: gold;*/
+}
+
+.typeH {
+    margin-top: 20%;
+    text-align: center;
+    font-family: Avenir, sans-serif;
+}
+.type {
+    text-align: center;
+    font-family: Avenir, sans-serif;
+}
+
+
+/*Intro*/
+
+.intro {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: auto;
+    height: auto;
+/*    background-color: beige;*/
+    display: flex;
+    justify-content: center;
+}
+
+.introContainer {
+    width: 80%;
+    height: 100%;
+/*    background-color: firebrick;*/
+}
+
+.introtext {
+    margin: 0%;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    color: gainsboro;
+}
+
+
+
+/*Pictures*/
+
+.pictures {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    width: auto;
+    height: auto;
+/*    background-color: beige;*/
+    display: flex;
+    justify-content: center;
+}
+
+
+.picContainer {
+    width: 60%;
+    height: 100%;
+/*    background-color: coral;*/
+    position: relative;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.imgDescr {
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+    font-family: Avenir, sans-serif;
+}
+
+.pre, .ne {
+    top: 47%;
+    width: auto;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.5em;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    user-select: none;
+    opacity: 60%;
+}
+
+.ne {
+    right: 0;
+}
+
+.pre:hover, .ne:hover {
+    background-color: dimgray;
+}
+
+
+/*Details*/
+
+.details {
+    grid-column: 1/3;
+    grid-row: 8/9;
+    width: auto;
+    height: auto;
+/*    background-color: beige;*/
+    display: flex;
+}
+
+.timelineContainer {
+    width: 50%;
+    height: 100%;
+/*    background-color: peru;*/
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    width: 5px;
+    height: 100%;
+    background-color: coral;
+}
+
+.teContainer {
+    width: 50%;
+    height: 100%;
+/*    background-color: burlywood;*/
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1em;
+}
+
+.indiTop {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.indi {
+    color: aliceblue;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    margin-right: 50%;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+}
+
+
+
+.explanationContainer {
+    width: 50%;
+    height: 100%;
+    background-color: #414141;;
+    box-shadow: 0px 5px 35px #151515;
+    overflow: scroll;
+}
+
+.eP {
+    padding: 5%;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    color: aliceblue;
+    margin: 0.5%;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .introContainer {
+        overflow: scroll;
+    }
+    .explanationContainer {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .introContainer {
+        font-size: 0.8em;
+    }
+    .explanationContainer {
+        font-size: 0.8em;
+    }
+}
+
+
+/*Next Up*/
+
+.nextUp {
+    grid-column: 1/3;
+    grid-row: 10/11;
+/*    background-color: cadetblue;*/
+    display: flex;
+}
+
+.skipContainer {
+    width: 100%;
+    height: 100%;
+/*    background-color: antiquewhite;*/
+    box-shadow: 0px 5px 35px #151515;
+    display: flex;
+}
+
+.goBack {
+    width: 50%;
+    height: 100%;
+/*    background-color: cyan;*/
+}
+
+.next {
+    width: 50%;
+    height: 100%;
+/*    background-color: olive;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nC {
+    width: 100%;
+    height: 50%;
+/*    background-color: dimgrey;*/
+}
+
+.previousPro {
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding-top: 1em;
+    font-family: GRIFTER, sans-serif;
+    color: coral;
+}
+
+.pC {
+    width: 100%;
+    height: 50%;
+/*    background-color: darkkhaki;*/
+}
+
+.pproj {
+    text-align: center;
+    margin: 0%;
+    font-family: AVENIR, sans-serif;
+    color: gray;
+}
+
+h4.pproj:hover {
+    color: coral;
+}
+
+.nextPro {
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding-top: 1em;
+    font-family: GRIFTER, sans-serif;
+    color: coral;
+}
+
+.pC {
+    width: 100%;
+    height: 50%;
+/*    background-color: darkkhaki;*/
+}
+
+.nproj {
+    text-align: center;
+    margin: 0%;
+    font-family: AVENIR, sans-serif;
+    color: gray;
+}
+
+h4.nproj:hover {
+    color: coral;
+}

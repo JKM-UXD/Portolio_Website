@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JKM Portfolio - Project One</title>
+        <link rel="stylesheet" href="project%20one.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="yeet" class="menuOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeM()">&times;</a>
+            <div class="menuLinks">
+                <a href="index.html">HOME</a>
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
+        <script>
+            function openM () {
+                    document.getElementById("yeet").style.height = "100%";
+                }
+                                        
+            function closeM () {
+                    document.getElementById("yeet").style.height = "0%";
+                }
+        </script>
+        <div class="titleContent">
+            <div class="projectOne">
+                <h1 class="headerA">WING CHUN</h1>
+            </div>
+            <div class="nav">
+                <div class="bar">
+                    <div class="menu">
+                        <div class="links">
+                            <h2 class="l"><span onclick="openM()">MENU</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="overview">
+                    <div class="ovCont">
+                        <div class="ovHeader">
+                            <h1 class="ovH">OVERVIEW</h1>
+                        </div>
+                        <div class="ovContent">
+                            <div class="identity">
+                                <h4 class="typeH">FIELD</h4>
+                                <h5 class="type">Ethnographic Research</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TYPE</h4>
+                                <h5 class="type">School Project</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">TEAM</h4>
+                                <h5 class="type">Solo</h5>
+                            </div>
+                            <div class="identity">
+                                <h4 class="typeH">DURATION</h4>
+                                <h5 class="type">6 Weeks</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="introContainer">
+                        <p class="introtext">A detailed research report on Wing Chun Sifus. This Project was part of an introductory course called Research for Design. Throughout 6 weeks I met with many different people of the respective subculture. I conducted research on Wing Chun blackbelts with insightful results, translated into relevant user needs and insights.
+                        </p>
+                    </div>
+                </div>
+                <div class="pictures">
+                    <div class="picContainer">
+                        <div class="slide">
+                            <img style="background-image: url(wing%20chun%20cover.png)">
+                            <div class="imgDescr">Cover</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(transcript1.png)">
+                            <div class="imgDescr">Transcript - Semi-structured Interview</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(transcript2.png)">
+                            <div class="imgDescr">Rudimentary Transcript - Ethnographic Interview</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(datacard.png)">
+                            <div class="imgDescr">Datacard</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(affinity.png)">
+                            <div class="imgDescr">Affinity Diagram</div>
+                        </div>
+                        <div class="slide">
+                            <img style="background-image: url(insights.png)">
+                            <div class="imgDescr">Insights</div>
+                        </div>
+                           <div class="slide">
+                            <img style="background-image: url(hmw.png)">
+                            <div class="imgDescr">HMW questions + Sketches</div>
+                        </div>
+                        <a class="pre" onclick="nSlide(-1)">&#8592;</a>
+                        <a class="ne" onclick="nSlide(1)">&#8594;</a>
+                    </div>
+                </div>
+                <script>
+                    var index = 1;
+                    show(index);
+                    
+                    function nSlide(n) {
+                        show(index += n);
+                    }
+                    
+                    function show(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        
+                        if (n > slides.length) {
+                            index = 1
+                        }
+                        if (n < 1) {
+                            index = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[index-1].style.display = "block";
+                    }
+                </script>
+                <div class="details">
+                    <div class="timelineContainer">
+                        <div class="timeline"></div>
+                        <div class="teContainer">
+                            <h5 class="indiTop">Selecting subculture</h5>
+                            <h5 class="indi">Preparation - Desk research</h5>
+                            <h5 class="indi">Observation</h5>
+                            <h5 class="indi">Semi-structured Interview</h5>
+                            <h5 class="indi">Ethnographic Interview</h5>
+                            <h5 class="indi">Organising Data</h5>
+                            <h5 class="indi">Defining Insights</h5>
+                            <h5 class="indi">Design Vision</h5>
+                        </div>
+                    </div>
+                    <div class="explanationContainer">
+                        <p class="eP">I was tasked to conduct research on a specific subculture (in my case Wing Chun Sifus). After starting with desk research and formulating curiosities I created research questions that would guide me through the process. The first research technique I used was observation. I contacted the owner of a local Wing Chun school and arranged a trial lesson where I could observe and participate. Although I had just arrived in The Hague and was unfamiliar with my surroundings, I managed to arrange two interviews with Wing Chun Sifus. Both interviews were very insightful and extensive. The second interview I conducted was 5h long in total. I was able to really emphasise, concentrate and ask the right questions even over such a long time. 
+                        From the recordings I transcribed both interviews and made affinity diagrams combining the findings. I used the diagram to identify clusters and connections. Then I translated the data gathered into relative insights. Lastly, I used these insights to formulate HMW questions which I translated into design directions. This concluded the first part of the course.</p>
+                    </div>
+                </div>
+                <div class="nextUp">
+                    <div class="skipContainer">
+                        <div class="goBack">
+                        </div>
+                        <div class="next">
+                            <div class="nC">
+                                <h3 class="nextPro">NEXT PROJECT</h3>
+                            </div>
+                            <div class="pC">
+                                <h4 class="proj"><a href="project%20two.html">Gift giving experience</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
